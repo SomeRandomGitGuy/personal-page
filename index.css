@@ -1,0 +1,225 @@
+body {
+    font-family: Cambo;
+    background-color: lightblue;
+}
+
+.main-page {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    margin: auto;
+    top: 10vh;
+    bottom: 0vw;
+    width: 80vw;
+    max-width: 1000px;
+    height: 100vh;
+    text-align: center;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 10px 10px 1px grey;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+    transition: transform 1s;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+
+    transition: height 500ms;
+    min-height: 0;
+}
+
+.project:hover {
+    height: 270px;
+}
+
+.project:hover .hide {
+    transition: opacity 800ms;
+    opacity: 1;
+}
+
+.project:hover .tile-title {
+    height: 140px;
+}
+
+/* specific outliers to the rule */
+
+.terminal:hover .tile-title {
+    height: 140px;
+}
+
+.chem:hover .tile-title {
+    height: 150px;
+}
+
+.history:hover .tile-title {
+    height: 150px;
+}
+
+
+
+
+
+.hide {
+    opacity: 0;
+    transition: opacity 200ms;
+    text-wrap: wrap;
+    overflow-wrap: anywhere;
+    margin-top: 8px;
+    
+}
+
+
+
+
+.projects {
+    background-image: url("backdrop.png");
+}
+
+.about {
+    background-image: url("pillar.jpg");
+}
+
+.fun {
+    background-image: url("background.png");
+}
+
+.chem {
+    background-image: url("chem.png");
+}
+
+.society {
+    background-image: url("society.png");
+}
+
+.terminal {
+    background-image: url("terminal.png");
+}
+
+.history {
+    background-image: url("backdrop.png");
+}
+
+.rpg {
+    background-image: url("RPG.png");
+}
+
+.tiles {
+    display: grid;
+    grid-auto-rows: auto;
+    width: 70vw;
+    max-width: 860px;
+    justify-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    /* background-color: red; */
+    gap: 20px;
+    row-gap: 20px;
+}
+
+h1 {
+    padding: 20px;
+    font-size: 60px;
+    margin: 0px;
+}
+
+h2 {
+    margin: 3px;
+    margin-bottom: 10px;
+}
+
+.tile-text {
+    background-color: white;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.tile-title {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(171, 171, 171, 0.950);
+    height: 22%;
+    min-height: 20%;
+    max-height: 60%;
+    min-width: 50%;
+    max-width: 70%;
+    transition: height 500ms;
+}
+
+.inactive {
+    background-color: yellow;
+    border-radius: 10px;
+    width: 100px;
+    margin: 0px;
+}
+
+.active {
+    background-color: green;
+    border-radius: 10px;
+    width: 100px;
+    margin: 0px;
+}
+
+.abandoned {
+    background-color: red;
+    border-radius: 10px;
+    width: 120px;
+    margin: 0px;
+}
+
+.horizontal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.return {
+    position:fixed;
+    padding: 7px;
+    background-color: white;
+    border-radius: 10px;
+    transition: background-color 500ms ease-in-out;
+}
+
+.return:hover {
+    background-color: cornflowerblue;
+}
+
+.play {
+    transition: transform 1s; 
+}
+
+.play:hover {
+    transform: scale(1.3);
+}
