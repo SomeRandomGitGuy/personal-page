@@ -130,6 +130,10 @@ body {
     background-image: url("RPG.png");
 }
 
+.stock {
+    background-color: black;
+}
+
 .tiles {
     display: grid;
     grid-auto-rows: auto;
