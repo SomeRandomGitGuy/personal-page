@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: lightgray;
     text-align: center;
+    font-family: 'Crimson Text';
 }
 
 .sidebar {
@@ -9,6 +10,7 @@ body {
     left: 0px;
     top: 0px;
     padding: 5px;
-    max-width: 400px;
+    max-width: 200px;
     overflow-wrap: break-word;
+    border: 1px solid grey;
 }
