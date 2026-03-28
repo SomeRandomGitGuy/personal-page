@@ -2,7 +2,11 @@ body {
     background-color: black;
     color: lightgray;
     text-align: center;
-    font-family: 'Crimson Text';
+    font-family: 'Noto Serif';
+}
+
+h1 {
+    margin-bottom: 5px;
 }
 
 .sidebar {
@@ -13,4 +17,12 @@ body {
     max-width: 200px;
     overflow-wrap: break-word;
     border: 1px solid grey;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    justify-content: center;
+    margin: auto;
 }
