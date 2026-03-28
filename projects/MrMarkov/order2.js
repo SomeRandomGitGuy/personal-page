@@ -17,6 +17,11 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
+function importer(){
+    let input = document.getElementById("import").value;
+    data = JSON.parse(input);
+}
+
 function loadEntry(){
     let buffer = document.querySelector(".input").value;
     buffer = buffer.replaceAll('\n',' ');
