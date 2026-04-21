@@ -57,6 +57,7 @@ function generateResponse(){
     console.log(starting);
     let starting2 = Object.keys(data[starting]);
     starting2 = starting2[getRandomInt(starting2.length)];
+    
     console.log(starting2);
     let current = [starting,starting2];
     let reponse = `${starting} ${starting2}`;
