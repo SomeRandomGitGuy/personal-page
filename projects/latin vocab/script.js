@@ -33,7 +33,17 @@ function readFile(input) {
 }
 
 function pickWord(){
-    let index = Math.floor(Math.random() * fileData.length);
+    let first = document.getElementById("wordSelection").value-1;
+    let second = document.getElementById("wordStart").value-1;
+    if (second > fileData.length){
+      document.getElementById("word").innerHTML = "number of words is too big";
+    }
+    let index = Math.floor(Math.random() * (second - first+1) + first);
+    console.log(index);
+    if (fileData[index][1] === ""){
+      pickWord();
+      return;
+    }
     chosenWord = fileData[index][0];
     answer = fileData[index][1];
 
