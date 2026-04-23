@@ -66,3 +66,8 @@ function processContents(contents){
   console.log(fileData);
   pickWord();
 }
+
+
+function loadNouns(){
+  
+}
