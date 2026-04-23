@@ -67,7 +67,9 @@ function processContents(contents){
   pickWord();
 }
 
-
-function loadNouns(){
-  
+document.addEventListener("keydown", logKey);
+function logKey(e) {
+    if (e.key === "Enter" && !e.shiftKey){
+        submit();
+    }
 }
