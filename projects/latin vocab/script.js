@@ -54,6 +54,7 @@ function pickWord(){
 }
 
 function processContents(contents){
+  console.log(contents);
   // write code to process the file here
 
   // contents is a string
@@ -75,4 +76,15 @@ function logKey(e) {
     if (e.key === "Enter" && !e.shiftKey){
         submit();
     }
+}
+
+function loadNouns(){
+  fileData = latinNouns.split("\n");
+
+  for (let i=0; i<fileData.length; i++) {
+    fileData[i] = fileData[i].split("\t");
+  }
+
+  console.log(fileData);
+  pickWord();
 }
