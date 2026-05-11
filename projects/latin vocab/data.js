@@ -72,7 +72,7 @@ aestās, aestātis, f	summer
 aetās, aetātis, f	age
 altitūdō, altitūdinis, f	depth
 avis, avis, f	bird
-classis, classis, f	fleet of ships
+classis, classis, f     fleet of ships
 coniūrātiō, coniūrātiōnis, f	conspiracy
 contentiō, contentiōnis, f	struggle
 ēruptiō, ēruptiōnis, f	counterattack
