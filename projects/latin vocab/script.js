@@ -11,7 +11,7 @@ let fileData;
 function submit(){
     let entry = document.querySelector(".entry");
     let ans = entry.value;
-    ans = ans.replace(" ","");
+    ans = ans.trim();
     ans = ans.toLowerCase();
     if (ans == answer){
         document.getElementById("mark").innerHTML = "correct";
