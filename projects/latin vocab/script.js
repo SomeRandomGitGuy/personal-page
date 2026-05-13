@@ -22,6 +22,7 @@ function submit(){
         wrong.push(chosenWord);
     }
     entry.value = "";
+    document.getElementById("percent").textContent = `${Math.round(right.length/(right.length+wrong.length) * 100)}%`;
     pickWord();
 }
 
