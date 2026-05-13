@@ -6,15 +6,20 @@
     </head>
     <body>
         <h1>latin vocab test</h1>
-        <input type="file" onchange="readFile(this)">
-        <p>give words from <input type="number" min="1" value="1" id="wordSelection"> to <input type="number" min="1" value="10" id="wordStart"></p>
-        <p>translate <span id="word"></span></p>
+        <p>Translate "<span id="word"></span>"</p>
         <input type="text" class="entry">
-        <button onclick="submit()">SUBMIT</button>
+        <button onclick="submit()">SUBMIT OR PRESS ENTER</button>
         <p id="mark"></p>
         <p id="percent"></p>
-        <br><br>
-        <button onclick="loadNouns()">load nouns</button>
+        <p id="selected">(Currently quizzing on nouns)</p>
+        <br>
+        <div style="border: 2px black solid; width: fit-content; padding: 10px;">
+            <h3 style="width: fit-content; margin-top: auto;">Settings</h3>
+            <button onclick="loadNouns()">load nouns</button>
+            <p style="width: fit-content;">Give words from <input type="number" min="1" value="1" id="wordSelection" style="width: 50px;"> to <input type="number" min="1" value="10" id="wordStart" style="width: 50px;"></p>
+            <h4 style="margin: auto;">Advanced</h4>
+            <input type="file" onchange="readFile(this)">
+        </div>
     </body>
     <script src="./data.js"></script>
     <script src="./script.js"></script>

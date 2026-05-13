@@ -7,22 +7,29 @@ let wrong = [];
 
 let fileData;
 
+let selection = "nouns";
+
+loadNouns();
+
 
 function submit(){
     let entry = document.querySelector(".entry");
     let ans = entry.value;
     ans = ans.trim();
     ans = ans.toLowerCase();
-    if (ans == answer){
-        document.getElementById("mark").innerHTML = "correct";
+    if (ans == answer.toLowerCase()){
+        document.getElementById("mark").innerHTML = `\"${answer}\" is correct!`;
+        document.getElementById("mark").style.color = "green";
         right.push(chosenWord);
     }
     else {
-        document.getElementById("mark").innerHTML = `wrong it was \'${answer}\'`;
+        document.getElementById("mark").innerHTML = `Wrong, it was \'${answer}\'`;
+        document.getElementById("mark").style.color = "red";
         wrong.push(chosenWord);
     }
     entry.value = "";
-    document.getElementById("percent").textContent = `${Math.round(right.length/(right.length+wrong.length) * 100)}%`;
+    document.getElementById("selected").textContent = `(Currently quizzing on ${selection})`;
+    document.getElementById("percent").textContent = `${Math.round(right.length/(right.length+wrong.length) * 100)}% correct so far (${right.length}/${right.length+wrong.length})`;
     pickWord();
 }
 
@@ -88,4 +95,5 @@ function loadNouns(){
 
   console.log(fileData);
   pickWord();
+  selection = "nouns";
 }
