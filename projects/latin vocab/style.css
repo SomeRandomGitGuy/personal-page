@@ -2,3 +2,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     
 }
+
+.side {
+    position: absolute;
+    right: 25%;
+    top: 0%;
+    margin: 30px;
+    border: solid black 2px;
+    min-height: 300px;
+    min-width: 200px;
+    padding: 10px;
+}
+
+h2 {
+    margin-top: 1px;
+}
