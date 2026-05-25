@@ -127,3 +127,47 @@ aciēs, aciēī, f	battle-line
 effigiēs, effigiēī, f	likeness
 faciēs, faciēī, f	face
 rēs pūblica, rēī pūblicae, f	state`;
+
+let adjectives = `acerbus, acerba, acerbum	bitter
+adversus, adversa, adversum	opposite
+aeturnus, aeturna, aeturnum	everlasting
+aliēnus, aliēna, aliēnum	foreign
+angustus, angusta, angustum	narrow
+arduus, ardua, arduum	steep
+asper, aspera, asperum	rough
+āter, ātra, ātrum	black
+aureus, aurea, aureum	golden
+caecus, caeca, caecum	blind
+cōnfertus, cōnferta, cōnfertum	crowded
+cōnscius, cōnscia, cōnscium	aware
+crēber, crēbra, crēbrum	frequent; thick
+cūnctus, cūncta, cūnctum	all
+dēfessus, dēfessa, dēfessum	exhausted
+dexter, dextra, dextrum	right
+dīversus, dīversa, dīversum	different from
+dubius, dubia, dubium	doubtful
+ēgregius, ēgregia, ēgregium	outstanding
+exiguus, exigua, exiguum	short
+ferus, fera, ferum	wild
+geminus, gemina, geminum	twin
+idōneus, idōnea, idōneum	suitable
+ignōtus, ignōta, ignōtum	unknown
+improbus, improba, improbum	wicked
+imprōvisus, imprōvisa, imprōvisum	unforeseen
+īmus, īma, īmum	lowest
+īnfēstus, īnfēsta, īnfēstum	hostile
+integer, integra, integrum	whole
+invīsus, invīsa, invīsum	hated
+laevus, laeva, laevum	left
+lātus, lāta, lātum	wide
+liber, libera, liberum	free
+obscūrus, obscūra, obscūrum	dark
+posterus, postera, posterum	following
+reliquus, reliqua, reliquum	remaining
+superus, supera, superum	upper
+ācer, ācris, ācre	sharp
+commūnis, commūne	common
+dulcis, dulce	sweet
+fēlix, fēlicis	lucky
+mollis, molle	soft
+pār, paris	equal`;
