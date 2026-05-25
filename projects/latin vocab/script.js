@@ -48,7 +48,7 @@ function pickWord(){
     let first = document.getElementById("wordSelection").value-1;
     let second = document.getElementById("wordStart").value-1;
     if (second > fileData.length){
-      document.getElementById("word").innerHTML = "number of words is too big";
+      console.log("number of words is too big");
     }
     let index = Math.floor(Math.random() * (second - first+1) + first);
     console.log(index);
