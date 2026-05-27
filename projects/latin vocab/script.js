@@ -110,3 +110,7 @@ function loadAdj(){
   pickWord();
   selection = "adjectives";
 }
+
+function clear(){
+  wrong = [];
+}
