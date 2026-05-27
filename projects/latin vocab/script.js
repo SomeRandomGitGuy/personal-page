@@ -113,4 +113,6 @@ function loadAdj(){
 
 function clear(){
   wrong = [];
+  right = [];
+  document.getElementById("wrong").innerHTML = "";
 }
