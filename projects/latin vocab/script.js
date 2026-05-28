@@ -111,7 +111,7 @@ function loadAdj(){
   selection = "adjectives";
 }
 
-function clear(){
+function clearList(){
   wrong = [];
   right = [];
   document.getElementById("wrong").innerHTML = "";
