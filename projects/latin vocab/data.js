@@ -1,5 +1,3 @@
-
-
 let latinNouns = `anima, animae, f	mind
 aquila, aquilae, f	eagle
 avāritia, avāritiae, f	greed
@@ -140,7 +138,7 @@ aureus, aurea, aureum	golden
 caecus, caeca, caecum	blind
 cōnfertus, cōnferta, cōnfertum	crowded
 cōnscius, cōnscia, cōnscium	aware
-crēber, crēbra, crēbrum	frequent; thick
+crēber, crēbra, crēbrum	frequent
 cūnctus, cūncta, cūnctum	all
 dēfessus, dēfessa, dēfessum	exhausted
 dexter, dextra, dextrum	right
