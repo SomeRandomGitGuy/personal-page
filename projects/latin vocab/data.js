@@ -203,7 +203,7 @@ dēferō, dēferre, dētulī, dēlātum	carry away
 praesum, praeesse, praefuī (+ dat)	be in charge`;
 
 
-let misc = `quīcumque, quaecumque, quodcumque	whoever, whatever
+let misc = `quīcumque, quaecumque, quodcumque	whoever
 quisque, quaeque, quodque	each
 uterque, utraque, utrumque	each of two
 amplius	more
