@@ -13,7 +13,7 @@
         <p id="percent"></p>
         <p id="selected">(Currently quizzing on nouns)</p>
         <br>
-        <div style="border: 2px black solid; width: fit-content; padding: 10px;">
+        <div style="border: 2px black solid; width: fit-content; padding: 10px;" class="settings">
             <h3 style="width: fit-content; margin-top: auto;">Settings</h3>
             <button onclick="loadNouns()">load nouns</button>
             <button onclick="loadAdj()">load adjectives</button>
@@ -21,6 +21,7 @@
             <p style="width: fit-content;">Give words from <input type="number" min="1" value="1" id="wordSelection" style="width: 50px;"> to <input type="number" min="1" value="10" id="wordStart" style="width: 50px;"></p>
             <h4 style="margin: auto;">Advanced</h4>
             <input type="file" onchange="readFile(this)">
+            <button onclick="toggleDark()">Toggle light/dark mode</button>
         </div>
         <div class="side">
             <h2>Incorrect words</h2>

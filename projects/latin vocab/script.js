@@ -5,6 +5,8 @@ let answer = "";
 let right = [];
 let wrong = [];
 
+let dark = false;
+
 let fileData;
 
 let selection = "nouns";
@@ -127,4 +129,17 @@ function clearList(){
   wrong = [];
   right = [];
   document.getElementById("wrong").innerHTML = "";
+}
+
+function toggleDark(){
+  if (!dark){
+    document.querySelector("body").style = "background-color:#121212; color: #FAF9F6; color-scheme: dark; border-color: #FAF9F6;";
+    document.querySelector(".side").style.borderColor = "#FAF9F6";
+    document.querySelector(".settings").style.borderColor = "#FAF9F6";
+  } else {
+    document.querySelector("body").style = "background-color: #FAF9F6; color: #121212; color-scheme: light; border-color: #121212;";
+    document.querySelector(".side").style.borderColor = "#121212";
+    document.querySelector(".settings").style.borderColor = "#121212";
+  }
+  dark = !dark;
 }
