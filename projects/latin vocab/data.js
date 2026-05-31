@@ -201,3 +201,28 @@ licet, licēre, licuit	be permitted
 meminī, meminisse	remember
 dēferō, dēferre, dētulī, dēlātum	carry away
 praesum, praeesse, praefuī (+ dat)	be in charge`;
+
+
+let misc = `quīcumque, quaecumque, quodcumque	whoever, whatever
+quisque, quaeque, quodque	each
+uterque, utraque, utrumque	each of two
+amplius	more
+circiter	about
+eō	there
+ferē	almost
+interim	meanwhile
+itaque	and so
+longē	far off
+nondum	not yet
+parum	too little
+prīmum	at first
+quā	where
+tantum	only
+velut	just as
+antequam	before
+aut ... aut	either ... or
+vel ... vel	either ... or
+causā (+ gen)	for the sake of
+propter (+ acc)	because of
+super (+ abl)	on top of
+-ve	or`;

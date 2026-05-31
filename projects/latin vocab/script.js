@@ -125,6 +125,18 @@ function loadVerb(){
   selection = "verbs";
 }
 
+function loadMisc(){
+  fileData = misc.split("\n");
+
+  for (let i=0; i<fileData.length; i++) {
+    fileData[i] = fileData[i].split("\t");
+  }
+
+  console.log(fileData);
+  pickWord();
+  selection = "misc.";
+}
+
 function clearList(){
   wrong = [];
   right = [];
