@@ -23,7 +23,7 @@ function submit(){
         right.push(chosenWord);
     }
     else {
-        document.getElementById("mark").innerHTML = `Wrong, it was \'${answer}\'`;
+        document.getElementById("mark").innerHTML = `Wrong, \'${chosenWord}\' means \'${answer}\'`;
         document.getElementById("mark").style.color = "red";
         document.getElementById("wrong").innerHTML += `${chosenWord}, ${answer}<br>`;
         wrong.push(chosenWord);
