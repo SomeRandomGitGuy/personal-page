@@ -111,7 +111,7 @@ function loadAdj(){
   selection = "adjectives";
 }
 
-function loadAdj(){
+function loadVerb(){
   fileData = verbs.split("\n");
 
   for (let i=0; i<fileData.length; i++) {
