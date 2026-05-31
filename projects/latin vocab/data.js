@@ -169,3 +169,35 @@ dulcis, dulce	sweet
 fēlix, fēlicis	lucky
 mollis, molle	soft
 pār, paris	equal`;
+
+let verbs = `arbitror, arbitrarī, arbitrātus sum	think
+fugō, fugāre, fugāvī, fugātum	put to flight
+for, fārī, fātus sum	speak
+iūrō, iūrāre, iūrāvī, iūrātum	swear
+iuvō, iuvāre, iūvī, iūtum	help
+negō, negāre, negāvī, negātum	deny
+occupō, occupāre, occupāvī, occupātum	seize
+praestō, praestāre, praestitī, praestītum	stand out
+vastō, vastāre, vastāvī, vastātum	devastate
+retineō, retinēre, retinuī, retentum	hold back
+accēdō, accēdere, accessī, accessum	approach
+addō, addere, addidī, additum	add
+caedō, caedere, cecīdī, caesum	strike
+colō, colere, coluī, cultum	cultivate
+dēdūcō, dēdūcere, dēdūxī, dēductum	withdraw
+dēligō, dēligere, dēlēgī, dēlēctum	choose
+īnstituō, īnstituere, īnstituī, īnstitūtum	set up
+metuō, metuere, metuī, metūtum	fear
+pellō, pellere, pepulī, pulsum	drive away
+premō, premere, pressī, pressum	press
+prōpōnō, prōpōnere, prōposuī, prōpositum	propose
+sē recipere	retreat
+solvō, solvere, solvī, solūtum	release
+experior, experīrī, expertus sum	test out
+mūniō, mūnīre, mūnīvī, mūnītum	fortify
+aggredior, aggressī, aggressus sum	attack
+praeficiō, praeficere, praefēcī, praefectum	put in charge
+licet, licēre, licuit	be permitted
+meminī, meminisse	remember
+dēferō, dēferre, dētulī, dēlātum	carry away
+praesum, praeesse, praefuī (+ dat)	be in charge`;
