@@ -50,10 +50,10 @@ function logKey(e) {
     if (e.key === "Space" && !e.shiftKey){
         reveal();
     }
-    if (e.key === "Y" && !e.shiftKey){
+    if (e.key === "y" && !e.shiftKey){
         correct();
     }
-    if (e.key === "N" && !e.shiftKey){
+    if (e.key === "n" && !e.shiftKey){
         incorrect();
     }
 }
