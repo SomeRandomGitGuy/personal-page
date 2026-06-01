@@ -18,12 +18,14 @@ function reveal(){
 
 function correct(){
     right.push(`${question}`);
+    document.getElementById("answer").textContent = "";
     giveQuestion();
 }
 
 function incorrect(){
     wrong.push(`${question}`);
     document.getElementById("wrong").innerHTML += `${question}<br>`;
+    document.getElementById("answer").textContent = "";
     giveQuestion();
 }
 
