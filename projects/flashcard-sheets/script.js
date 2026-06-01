@@ -16,7 +16,7 @@ function reveal(){
   document.getElementById("answer").textContent = `Answer: ${answer}`;
 }
 
-function right(){
+function correct(){
     right.push(`${question}`);
     giveQuestion();
 }
