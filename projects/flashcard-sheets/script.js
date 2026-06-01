@@ -47,7 +47,7 @@ function giveQuestion(){
 
 document.addEventListener("keydown", logKey);
 function logKey(e) {
-    if (e.key === "Space" && !e.shiftKey){
+    if (e.key === "Enter" && !e.shiftKey){
         reveal();
     }
     if (e.key === "y" && !e.shiftKey){
