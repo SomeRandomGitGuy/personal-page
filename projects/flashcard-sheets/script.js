@@ -21,7 +21,7 @@ function correct(){
     giveQuestion();
 }
 
-function wrong(){
+function incorrect(){
     wrong.push(`${question}`);
     document.getElementById("wrong").innerHTML += `${question}<br>`;
     giveQuestion();
