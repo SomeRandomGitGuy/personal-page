@@ -24,7 +24,7 @@ function correct(){
 
 function incorrect(){
     wrong.push(`${question}`);
-    document.getElementById("wrong").innerHTML += `${question}<br>`;
+    document.getElementById("wrong").innerHTML += `${question} ${answer}<br>`;
     document.getElementById("answer").textContent = "";
     giveQuestion();
 }
