@@ -110,3 +110,5 @@ function toggleDark(){
   }
   dark = !dark;
 }
+
+getData();
