@@ -6,8 +6,9 @@
     </head>
     <body>
         <h1>Google Sheets flashcards</h1>
-        <p><span id="word"></span>"</p>
-        <p id="mark"></p>
+        <p><span id="word"></span></p>
+        <button>Remembered (Y)</button>
+        <button>Not remembered (N)</button>
         <p id="percent"></p>
         <br>
         <div style="border: 2px black solid; width: fit-content; padding: 10px;" class="settings">
@@ -15,7 +16,9 @@
             <p style="width: fit-content;">Give words from <input type="number" min="1" value="1" id="wordSelection" style="width: 50px;"> to <input type="number" min="1" value="10" id="wordStart" style="width: 50px;"></p>
             <h4 style="margin: auto;">Advanced</h4>
             <input id="url" value="https://docs.google.com/spreadsheets/d/1GR9S_sg1ndkR67dgmg6Uoij3DgLBhpxRPlsy2IsiBcM/edit?usp=sharing">
-            <button id="get">retreieve data</button>
+            <button id="get" onclick="getData()">retreieve data</button>
+            <p id="status"></p>
+            <br>
             <button onclick="toggleDark()">Toggle light/dark mode</button>
         </div>
         <a style="position: absolute; bottom: 0px; left: 0px; margin: 10px;" href="./../../index.html" class="return">Return to homepage</a>

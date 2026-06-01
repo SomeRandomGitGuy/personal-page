@@ -31,6 +31,15 @@ function processContents(contents){
   pickWord();
 }
 
+async function getData(){
+  let url = document.getElementById("url").value;
+  url = url.slice(0,url.indexOf("/edit?"))
+  url += "/export?format=tsv";
+  console.log(url);
+  let response = await fetch(url);
+  console.log(response);
+}
+
 
 function clearList(){
   wrong = [];
