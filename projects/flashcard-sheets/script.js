@@ -80,7 +80,7 @@ async function getData(){
   let url = document.getElementById("url").value;
   // url = url.slice(0,url.indexOf("/edit?"))
   // url += "/export?format=tsv";
-  url = url.replace("edit?","/export?format=tsv&");
+  url = url.replace("edit?","export?format=tsv&");
   console.log(url);
   let response = await fetch(url);
   result = await response.text();
