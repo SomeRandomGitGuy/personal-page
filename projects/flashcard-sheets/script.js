@@ -16,6 +16,17 @@ function reveal(){
   document.getElementById("answer").textContent = `Answer: ${answer}`;
 }
 
+function right(){
+    right.push(`${question}`);
+    giveQuestion();
+}
+
+function wrong(){
+    wrong.push(`${question}`);
+    document.getElementById("wrong").innerHTML += `${question}<br>`;
+    giveQuestion();
+}
+
 function giveQuestion(){
   let first = document.getElementById("wordSelection").value-1;
   let second = document.getElementById("wordStart").value-1;
