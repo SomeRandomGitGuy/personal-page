@@ -37,7 +37,7 @@ async function getData(){
   url += "/export?format=tsv";
   console.log(url);
   let response = await fetch(url);
-  console.log(response);
+  console.log(response.text());
 }
 
 
