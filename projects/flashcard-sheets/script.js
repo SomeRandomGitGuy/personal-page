@@ -12,6 +12,34 @@ let fileData;
 let selection = "nouns";
 
 
+function reveal(){
+  document.getElementById("answer").textContent = `Answer: ${answer}`;
+}
+
+function giveQuestion(){
+  let first = document.getElementById("wordSelection").value-1;
+  let second = document.getElementById("wordStart").value-1;
+  if (second > fileData.length){
+    console.log("number of questions to pick from is too big");
+  }
+  let index = Math.floor(Math.random() * (second - first+1) + first);
+  console.log(index);
+  if (fileData[index][1] === ""){
+    giveQuestion();
+    return;
+  }
+  chosenWord = fileData[index][0];
+  answer = fileData[index][1];
+
+  document.getElementById("word").innerHTML = chosenWord;
+}
+
+document.addEventListener("keydown", logKey);
+function logKey(e) {
+    if (e.key === "Enter" && !e.shiftKey){
+        reveal();
+    }
+}
 
 function processContents(contents){
   console.log(contents);
@@ -28,7 +56,7 @@ function processContents(contents){
   }
 
   console.log(fileData);
-  pickWord();
+  giveQuestion();
 }
 
 async function getData(){
