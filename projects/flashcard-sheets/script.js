@@ -30,6 +30,7 @@ function incorrect(){
 }
 
 function giveQuestion(){
+  document.getElementById("limit").textContent = `no. of questions: ${fileData.length}`;
   document.getElementById("percent").textContent = `${Math.round(right.length/(right.length+wrong.length) * 100)}% correct so far (${right.length}/${right.length+wrong.length})`;
   let first = document.getElementById("wordSelection").value-1;
   let second = document.getElementById("wordStart").value-1;
