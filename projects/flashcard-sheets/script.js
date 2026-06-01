@@ -39,7 +39,7 @@ function giveQuestion(){
     giveQuestion();
     return;
   }
-  chosenWord = fileData[index][0];
+  question = fileData[index][0];
   answer = fileData[index][1];
 
   document.getElementById("word").innerHTML = chosenWord;
