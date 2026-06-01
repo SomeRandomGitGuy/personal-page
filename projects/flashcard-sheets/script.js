@@ -42,13 +42,19 @@ function giveQuestion(){
   question = fileData[index][0];
   answer = fileData[index][1];
 
-  document.getElementById("word").innerHTML = chosenWord;
+  document.getElementById("word").innerHTML = question;
 }
 
 document.addEventListener("keydown", logKey);
 function logKey(e) {
-    if (e.key === "Enter" && !e.shiftKey){
+    if (e.key === "Space" && !e.shiftKey){
         reveal();
+    }
+    if (e.key === "Y" && !e.shiftKey){
+        correct();
+    }
+    if (e.key === "N" && !e.shiftKey){
+        incorrect();
     }
 }
 
