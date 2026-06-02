@@ -92,6 +92,20 @@ async function getData(){
   processContents(result);
 }
 
+function dates(){
+  let response = await fetch("https://docs.google.com/spreadsheets/d/1va-vgAQicEeWTeDnTDn0N5zSnaG864orTll4vVljJI0/edit?gid=1951687131#gid=1951687131");
+  result = await response.text();
+  console.log(result);
+  processContents(result);
+}
+
+function events(){
+  let response = await fetch("https://docs.google.com/spreadsheets/d/1va-vgAQicEeWTeDnTDn0N5zSnaG864orTll4vVljJI0/edit?gid=523589272#gid=523589272");
+  result = await response.text();
+  console.log(result);
+  processContents(result);
+}
+
 
 function clearList(){
   wrong = [];
