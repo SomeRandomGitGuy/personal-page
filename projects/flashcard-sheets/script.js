@@ -93,14 +93,14 @@ async function getData(){
 }
 
 async function dates(){
-  let response = await fetch("https://docs.google.com/spreadsheets/d/1va-vgAQicEeWTeDnTDn0N5zSnaG864orTll4vVljJI0/edit?gid=1951687131#gid=1951687131");
+  let response = await fetch("https://docs.google.com/spreadsheets/d/1va-vgAQicEeWTeDnTDn0N5zSnaG864orTll4vVljJI0/export?format=tsv&gid=1951687131#gid=1951687131");
   result = await response.text();
   console.log(result);
   processContents(result);
 }
 
 async function events(){
-  let response = await fetch("https://docs.google.com/spreadsheets/d/1va-vgAQicEeWTeDnTDn0N5zSnaG864orTll4vVljJI0/edit?gid=523589272#gid=523589272");
+  let response = await fetch("https://docs.google.com/spreadsheets/d/1va-vgAQicEeWTeDnTDn0N5zSnaG864orTll4vVljJI0/export?format=tsv&gid=523589272#gid=523589272");
   result = await response.text();
   console.log(result);
   processContents(result);
