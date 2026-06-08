@@ -46,7 +46,7 @@ function giveQuestion(){
   question = fileData[index][0];
   answer = fileData[index][1];
 
-  document.getElementById("word").innerHTML = question;
+  document.getElementById("word").textContent = question;
 }
 
 document.addEventListener("keydown", logKey);
