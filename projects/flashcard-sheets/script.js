@@ -106,6 +106,13 @@ async function events(){
   processContents(result);
 }
 
+async function techniques(){
+  let response = await fetch("https://docs.google.com/spreadsheets/d/1GR9S_sg1ndkR67dgmg6Uoij3DgLBhpxRPlsy2IsiBcM/export?format=tsv&gid=1306399102#gid=1306399102");
+  result = await response.text();
+  console.log(result);
+  processContents(result);
+}
+
 
 function clearList(){
   wrong = [];
